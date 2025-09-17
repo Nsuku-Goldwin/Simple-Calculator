@@ -8,13 +8,14 @@
   box-sizing: border-box;
   font-size: 20px;
 
-  /* color: var(--f-coler); */
+  color: var(--f-coler);
 }
 body {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: gray;
 }
 .calculator {
   width: 300px;
@@ -33,7 +34,7 @@ body {
   top: -27px;
   left: 254px;
   z-index: 100;
-  color: rgb(0, 173, 0);
+  color: rgb(8, 189, 8);
   background-color: var(--b-color);
   border: 0;
 }
@@ -42,7 +43,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: none;
+  /* border: 0; */
 }
 .buttons-row {
   display: flex;
@@ -53,4 +54,20 @@ body {
   width: 60px;
   height: 60px;
   font-weight: bold;
+}
+.btn,
+#delete-btn:hover {
+  cursor: pointer;
+}
+.green-btn {
+  background-color: rgb(8, 189, 8);
+}
+.grey-btn {
+  background-color: rgb(46, 46, 46);
+}
+.l-grey-btn {
+  background-color: rgb(138, 138, 138);
+}
+.d-grey-btn {
+  background-color: rgb(20, 20, 20);
 }
