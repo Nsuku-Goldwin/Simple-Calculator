@@ -45,6 +45,7 @@ function zero() {
 function clearAll() {
   screen = "";
   printScreen();
+  document.getElementById("screen2").innerHTML = "";
 }
 function paranth1() {
   screen += "(";
@@ -55,7 +56,7 @@ function paranth2() {
   printScreen();
 }
 function devide() {
-  screen += "÷";
+  screen += "/";
   printScreen();
 }
 function multiply() {
@@ -75,6 +76,10 @@ function remainder() {
   printScreen();
 }
 function equals() {
-  document.getElementById("screen2").innerHTML = Number(screen);
+  try {
+    document.getElementById("screen2").innerHTML = eval(screen);
+  } catch (error) {
+    document.getElementById("screen2").innerHTML = "Error";
+  }
   screen = "";
 }
