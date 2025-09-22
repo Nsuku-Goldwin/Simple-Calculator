@@ -12,40 +12,86 @@
   </head>
   <body>
     <section class="calculator">
-      <div class="screen"></div>
+      <div class="screen">
+        <p id="screen-p"></p>
+        <p id="screen2"></p>
+      </div>
       <button id="delete-btn"><i class="fa-solid fa-delete-left"></i></button>
       <div class="buttons">
         <div class="buttons-row">
-          <button class="btn grey-btn">C</button>
-          <button class="btn grey-btn">(</button>
-          <button class="btn grey-btn">)</button>
-          <button class="btn l-grey-btn">÷</button>
+          <button class="btn grey-btn" id="clear-all" onclick="clearAll()">
+            C
+          </button>
+          <button class="btn grey-btn" id="paranth1-btn" onclick="paranth1()">
+            (
+          </button>
+          <button class="btn grey-btn" id="paranth2-btn" onclick="paranth2()">
+            )
+          </button>
+          <button class="btn l-grey-btn" id="divide-btn" onclick="devide()">
+            ÷
+          </button>
         </div>
         <div class="buttons-row">
-          <button class="btn d-grey-btn">7</button>
-          <button class="btn d-grey-btn">8</button>
-          <button class="btn d-grey-btn">9</button>
-          <button class="btn l-grey-btn">x</button>
+          <button class="btn d-grey-btn" id="seven-btn" onclick="seven()">
+            7
+          </button>
+          <button class="btn d-grey-btn" id="eight-btn" onclick="eight()">
+            8
+          </button>
+          <button class="btn d-grey-btn" id="nine-btn" onclick="nine()">
+            9
+          </button>
+          <button
+            class="btn l-grey-btn"
+            id="multiplecation-btn"
+            onclick="multiply()"
+          >
+            x
+          </button>
         </div>
         <div class="buttons-row">
-          <button class="btn d-grey-btn">4</button>
-          <button class="btn d-grey-btn">5</button>
-          <button class="btn d-grey-btn">6</button>
-          <button class="btn l-grey-btn">-</button>
+          <button class="btn d-grey-btn" id="four-btn" onclick="four()">
+            4
+          </button>
+          <button class="btn d-grey-btn" id="five-btn" onclick="five()">
+            5
+          </button>
+          <button class="btn d-grey-btn" id="six-btn" onclick="six()">6</button>
+          <button class="btn l-grey-btn" id="subtract-btn" onclick="subtract()">
+            -
+          </button>
         </div>
         <div class="buttons-row">
-          <button class="btn d-grey-btn">1</button>
-          <button class="btn d-grey-btn">2</button>
-          <button class="btn d-grey-btn">3</button>
-          <button class="btn l-grey-btn">+</button>
+          <button class="btn d-grey-btn" id="one-btn" onclick="one()">1</button>
+          <button class="btn d-grey-btn" id="two-btn" onclick="two()">2</button>
+          <button class="btn d-grey-btn" id="three-btn" onclick="three()">
+            3
+          </button>
+          <button class="btn l-grey-btn" id="addition-btn" onclick="add()">
+            +
+          </button>
         </div>
         <div class="buttons-row">
-          <button class="btn d-grey-btn">%</button>
-          <button class="btn d-grey-btn">0</button>
-          <button class="btn d-grey-btn">.</button>
-          <button class="btn green-btn">=</button>
+          <button
+            class="btn d-grey-btn"
+            id="remainder-btn"
+            onclick="remainder()"
+          >
+            %
+          </button>
+          <button class="btn d-grey-btn" id="zero-btn" onclick="zero()">
+            0
+          </button>
+          <button class="btn d-grey-btn" id="decimal-btn">.</button>
+          <button class="btn green-btn" id="equals-btn" onclick="equals()">
+            =
+          </button>
         </div>
       </div>
     </section>
+    <footer>
+      <script src="./main.js"></script>
+    </footer>
   </body>
 </html>
